@@ -1,0 +1,23 @@
+.ticker {
+    background-color: #111;
+    color: #0f0;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    font-family: monospace;
+  }
+  
+  .ticker-content {
+    display: inline-block;
+    animation: scroll-left 25s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
